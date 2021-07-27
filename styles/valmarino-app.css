@@ -1,0 +1,71 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+@font-face {
+  src: url(fonts/shallota.ttf);
+  font-family: shallota;
+  src: url(fonts/univers-light.ttf);
+  font-family: univers;
+}
+@font-face {
+  src: url(fonts/univers-light.ttf);
+  font-family: univers;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+body {
+  margin: 0%;
+  background-image: url("/assets/fondo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+nav {
+  padding: 0 2rem;
+  position: relative;
+  background: transparent;
+  justify-content: space-between;
+  border-bottom: 1px solid;
+  max-height: 80px;
+}
+.container-fluid {
+  max-height: 80px;
+}
+.nav-logo {
+  font-family: shallota;
+  font-size: 65px;
+  color: rgb(4, 6, 8);
+  text-decoration: none;
+  max-height: 80px;
+}
+.nav-items {
+  list-style-type: none;
+  margin: 0;
+}
+.nav-links {
+  padding: 1.3rem 1rem;
+  font-size: 20px;
+  color: rgb(4, 6, 8);
+  text-decoration: none;
+  font-family: univers;
+  font-weight: 200;
+}
+
+.nav-links a:hover {
+  color: #dcc9fa;
+}
+.custom-toggler {
+  border-color: black;
+}
+/* Setting the stroke to green using rgb values (0, 128, 0) */
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(0, 0, 0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
