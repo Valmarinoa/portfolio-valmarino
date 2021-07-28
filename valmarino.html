@@ -27,9 +27,16 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <style>
+      .navbar-pad {
+        padding-top: 70px;
+        padding-bottom: 70px;
+        max-height: 80px;
+      }
+    </style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-transparent fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-pad bg-transparent sticky-top">
       <div class="container-fluid">
         <a class="nav-logo active" href="#">Valentina Mariño</a>
         <button
@@ -43,13 +50,51 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
+        <div
+          class="collapse navbar-collapse justify-content-flex-end"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav me-auto">
             <a class="nav-links" href="#">Works</a>
             <a class="nav-links" href="#">About</a>
           </div>
         </div>
       </div>
     </nav>
+
+    <div class="container vertical-center d-flex my-auto">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-auto projects">
+          <h2 class="silence">Frozen Woods</h2>
+        </div>
+        <div class="col-md-auto projects">
+          <h2 class="silence">Value Tuning</h2>
+        </div>
+        <div class="col-md-auto projects">
+          <h2 class="silence">Aurae</h2>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-auto projects">
+            <h2 class="silence">Anthropology of Water</h2>
+          </div>
+          <div class="col-md-auto projects">
+            <h2 class="silence">Starlight Barhandle</h2>
+          </div>
+
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-auto projects">
+              <h2 class="silence">Seduce the Box</h2>
+            </div>
+            <div class="col-md-auto projects">
+              <h2 class="silence">Human Systems</h2>
+            </div>
+            <div class="col-md-auto projects">
+              <h2 class="silence">Silence of Blue</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

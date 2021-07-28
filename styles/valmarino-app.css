@@ -28,13 +28,12 @@ body {
   background-repeat: no-repeat;
 }
 nav {
-  padding: 0 2rem;
   position: relative;
   background: transparent;
   justify-content: space-between;
   border-bottom: 1px solid;
-  max-height: 80px;
 }
+
 .container-fluid {
   max-height: 80px;
 }
@@ -56,8 +55,11 @@ nav {
   text-decoration: none;
   font-family: univers;
   font-weight: 200;
+  justify-content: flex-end;
 }
-
+.navbar-nav {
+  justify-content: flex-end;
+}
 .nav-links a:hover {
   color: #dcc9fa;
 }
@@ -68,4 +70,30 @@ nav {
 
 .custom-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(0, 0, 0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.projects {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 40px;
+}
+container {
+  text-align: center;
+}
+.rox {
+  margin-top: 20px;
+  width: auto;
+  align-items: center;
+}
+h2 {
+  text-align: center;
+  font-family: shallota;
+  font-size: 40px;
+}
+.vertical-center {
+  /* Fallback for browsers do NOT support vh unit */
+  min-height: 85vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
 }
