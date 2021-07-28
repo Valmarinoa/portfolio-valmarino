@@ -33,6 +33,9 @@ nav {
   justify-content: space-between;
   border-bottom: 1px solid;
 }
+a {
+  text-decoration: none;
+}
 
 .container-fluid {
   max-height: 80px;
@@ -61,7 +64,7 @@ nav {
   justify-content: flex-end;
 }
 .nav-links a:hover {
-  color: #dcc9fa;
+  color: #cccccc;
 }
 .custom-toggler {
   border-color: black;
@@ -77,6 +80,13 @@ nav {
   justify-content: space-between;
   margin: 40px;
 }
+.project {
+  text-decoration: none;
+  color: rgb(4, 6, 8);
+}
+.project:hover {
+  color: #ede4ff;
+}
 container {
   text-align: center;
 }
@@ -85,10 +95,10 @@ container {
   width: auto;
   align-items: center;
 }
-h2 {
+h1 {
   text-align: center;
   font-family: shallota;
-  font-size: 40px;
+  font-size: 100px;
 }
 .vertical-center {
   /* Fallback for browsers do NOT support vh unit */
