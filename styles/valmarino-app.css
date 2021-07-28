@@ -90,7 +90,7 @@ a {
 container {
   text-align: center;
 }
-.rox {
+.row {
   margin-top: 20px;
   width: auto;
   align-items: center;
@@ -106,4 +106,17 @@ h1 {
 
   display: flex;
   align-items: center;
+}
+
+.frozen-overlay {
+  position: absolute;
+  justify-content: center;
+  z-index: -1;
+  max-height: 400px;
+  width: auto;
+  opacity: 0.5;
+}
+
+.frozen:hover .frozen-overlay {
+  opacity: 1;
 }
