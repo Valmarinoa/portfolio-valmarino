@@ -88,7 +88,7 @@ a {
   margin-bottom: 10px;
 }
 .project:hover {
-  color: #ede4ff;
+  filter: saturate(4);
 }
 .container-fluid {
   text-align: center;
@@ -109,6 +109,7 @@ h1 {
   text-align: center;
   font-family: shallota;
   font-size: 100px;
+  height: 30px;
 }
 .vertical-center {
   /* Fallback for browsers do NOT support vh unit */
@@ -121,7 +122,7 @@ h1 {
 .images {
   position: absolute;
   text-align: center;
-  display: block;
+  display: none;
   z-index: -1;
   top: 50%;
   left: 50%;
