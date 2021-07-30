@@ -138,7 +138,7 @@ h1 {
   box-shadow: 0 5px 15px rgba(40, 39, 39, 0.5);
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   a.nav-logo.active {
     font-size: 50px;
     width: 50%;
@@ -152,5 +152,19 @@ h1 {
   }
   .container-fluid-content {
     flex-direction: row;
+  }
+}
+
+@media (min-aspect-ratio: 16/9) {
+  #bgvideo {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  #bgvideo {
+    width: auto;
+    height: 100%;
   }
 }
