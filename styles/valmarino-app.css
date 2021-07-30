@@ -45,6 +45,8 @@ a {
 
 .container-fluid {
   max-height: 80px;
+  text-align: center;
+  flex-direction: row;
 }
 a.nav-logo.active {
   font-family: shallota;
@@ -96,13 +98,9 @@ a.nav-logo.active {
 .project:hover {
   filter: saturate(4);
 }
-.container-fluid {
-  text-align: center;
-  flex-direction: row;
-}
+
 .container-fluid-content {
   justify-content: center;
-  width: 100%;
   flex-direction: column;
 }
 .row {
@@ -111,11 +109,15 @@ a.nav-logo.active {
   align-items: center;
   height: fit-content;
 }
+.col {
+  width: min-content;
+}
 h1 {
   text-align: center;
   font-family: shallota;
   font-size: 100px;
   height: 30px;
+  line-height: 0.2;
 }
 .vertical-center {
   /* Fallback for browsers do NOT support vh unit */
@@ -149,8 +151,5 @@ h1 {
   .navbar-pad {
     border: none;
     height: 70px;
-  }
-  .container-fluid-content {
-    flex-direction: row;
   }
 }
