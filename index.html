@@ -27,6 +27,7 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script type="text/javascript" src="./script.js"></script>
     <style>
       .navbar-pad {
         padding-top: 60px;
@@ -62,55 +63,79 @@
       </div>
     </nav>
 
-    <div class="container vertical-center d-flex my-auto">
-      <div class="row d-flex justify-content-center">
-        <div class="col-md-auto projects">
-          <img src="assets/frozen.png" class="img-fluid frozen-overlay" />
+    <div
+      class="
+        container-fluid container-fluid-content
+        vertical-center
+        my-auto
+        justify-content-center
+      "
+    >
+      <div class="row d-flex">
+        <div class="col justify-content-center projects">
           <a href="#" class="project">
-            <h1>Frozen Woods</h1>
+            <h1 onmouseover="showFrozen()" onmouseout="hideFrozen()">
+              Frozen Woods
+            </h1>
+          </a>
+          <img src="/assets/frozen.png" class="img-fluid images" id="frozen-img">
+          <a href="#" class="project">
+            <h1 onmouseover="showValue()" onmouseout="hideValue()">
+              Value Tuning
+            </h1>
+          </a>
+          <img src="/assets/value.png" class="img-fluid images" id="value-img">
+          <a href="#" class="project">
+            <h1 onmouseover="showAurae()" onmouseout="hideAurae()">Aurae</h1>
           </a>
         </div>
-        <div class="col-md-auto projects">
+      </div>
+    <img src="/assets/water.png" class="img-fluid images" id="water-img">
+      <div class="row d-flex">
+        <div class="col justify-content-center projects">
           <a href="#" class="project">
-            <h1>Value Tuning</h1>
+            <h1 onmouseover="showWater()" onmouseout="hideWater()">
+              Anthropology of Water
+            </h1>
           </a>
-        </div>
-        <div class="col-md-auto projects">
+          <img src="/assets/thoughts.png" class="img-fluid images" id="thoughts-img">
           <a href="#" class="project">
-            <h1>Aurae</h1>
+            <h1 onmouseover="showThoughts()" onmouseout="hideThoughts()">
+              Thoughts
+            </h1>
           </a>
-        </div>
-
-        <div class="row d-flex justify-content-center">
-          <div class="col-md-auto projects">
-            <a href="#" class="project">
-              <h1>Anthropology of Water</h1>
-            </a>
-          </div>
-          <div class="col-md-auto projects">
-            <a href="#" class="project">
-              <h1>Starlight Barhandle</h1>
-            </a>
-          </div>
-
-          <div class="row d-flex justify-content-center">
-            <div class="col-md-auto projects">
-              <a href="#" class="project">
-                <h1>Seduce the Box</h1>
-              </a>
-            </div>
-            <div class="col-md-auto projects">
-              <a href="#" class="project">
-                <h1>Human Systems</h1>
-              </a>
-            </div>
-            <div class="col-md-auto projects">
-              <a href="#" class="project">
-                <h1>Silence of Blue</h1>
-              </a>
-            </div>
-          </div>
-        </div>
+          <img src="/assets/star.png" class="img-fluid images" id="star-img">
+          <a href="#" class="project">
+            <h1 onmouseover="showStar()" onmouseout="hideStar()">
+              Starlight Barhandle
+            </h1>
+          </a>
+      </div>
+      </div>
+    
+      <div class="row d-flex">
+        <div class="col justify-content-center projects">
+          <img src="/assets/box.png" class="img-fluid images" id="box-img">
+          <a href="#" class="project">
+            <h1 onmouseover="showSeduceBox()" onmouseout="hideBox()">
+              Seduce the Box
+            </h1>
+          </a>
+          <img src="/assets/human-systems.png" class="img-fluid images" id="human-systems-img">
+          <a href="#" class="project">
+            <h1
+              onmouseover="showHumanSystems()"
+              onmouseout="hideHumanSystems()"
+            >
+              Human Systems
+            </h1>
+          </a>
+          <img src="/assets/silence.png" class="img-fluid images" id="silence-img">
+          <a href="#" class="project">
+            <h1 onmouseover="showSilence()" onmouseout="hideSilence()">
+              Silence of Blue
+            </h1>
+          </a>
       </div>
     </div>
   </body>
