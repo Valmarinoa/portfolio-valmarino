@@ -44,7 +44,7 @@ a {
 }
 
 .container-fluid {
-  max-height: 80px;
+  max-height: 90px;
   text-align: center;
   flex-direction: row;
 }
@@ -177,7 +177,12 @@ h1 {
   a.nav-logo.active {
     padding-top: 10px;
   }
-  .navbar {
+  .navbar-bar {
     margin-bottom: 70px;
+    margin-top: 20px;
+  }
+  .container-fluid-content {
+    margin-bottom: 70px;
+    padding-top: 200px;
   }
 }
