@@ -131,6 +131,11 @@ h1 {
   bottom: -24px;
   font-weight: 100;
 }
+.about-description {
+  font-size: 14px;
+  padding-top: 50px;
+}
+
 .vertical-center {
   /* Fallback for browsers do NOT support vh unit */
   min-height: 85vh; /* These two lines are counted as one :-)       */
@@ -139,7 +144,7 @@ h1 {
   align-items: center;
 }
 
-.images {
+.images-menu {
   position: absolute;
   text-align: center;
   display: none;
@@ -151,6 +156,11 @@ h1 {
   max-height: 300px;
   width: auto;
   box-shadow: 0 5px 15px rgba(40, 39, 39, 0.5);
+}
+#profile-img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 50%;
 }
 
 @media (max-width: 600px) {
@@ -167,7 +177,7 @@ h1 {
   }
 }
 @media (max-width: 800px) {
-  .images {
+  .images-menu {
     display: none;
   }
   h1 {
