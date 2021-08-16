@@ -173,13 +173,17 @@ p, h4{
   color: blue;
 }
 .comment {
-  border-radius: 50%;
   border-width: thin;
+}
+.process-silence{
+  box-sizing: border-box;
+  padding-left: 30px;
+  padding-right: 30px;
 }
  .technicals {
 max-height: 300px;
 width: auto;
-padding-top: 100px;
+padding-top: 60px;
 }
 
 .about-description {
