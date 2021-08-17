@@ -52,7 +52,6 @@ a {
 }
 
 .container-fluid {
-  max-height: 90px;
   text-align: center;
   flex-direction: row;
   box-sizing: border-box;
@@ -60,7 +59,16 @@ a {
 .container-fluid-content {
   justify-content: center;
   flex-direction: column;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  padding-top: 10%;
 }
+.cv-container {
+  max-width: 70%;
+  
+}
+
 a.nav-logo.active {
   font-family: shallota;
   font-size: 55px;
@@ -170,7 +178,7 @@ h1 {
 }
 
 p, h4{
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: univers;
 }
 p {
   font-size: 14px;
@@ -206,28 +214,9 @@ padding-top: 60px;
   left: 9.5%;
   font-size: 10px;
 }
-.value {
-  position: relative;
-  left: 65%;
-  top:65px;
-}
-.box{
-  position: relative;
-  right: 37%;
-  top:95px;
-}
-.blue {
-  position: relative;
-  right: 3%;
-}
-.frozen {
-  position: relative;
-  left: 50%;
-  top: 180px;
-}
 
 .about-description {
-  font-size: 14px;
+  font-size: 13px;
   padding-top: 50px;
 }
 
@@ -243,7 +232,6 @@ box-sizing: border-box;
 padding: 0%;
 }
 
-
 .images-menu {
   position: absolute;
   text-align: center;
@@ -257,19 +245,44 @@ padding: 0%;
   box-shadow: 0 5px 15px rgba(40, 39, 39, 0.5);
   z-index: -2;
 }
-.image-menu {
-  position: relative;
-  display: block;
-  max-height: 200px;
-  width: auto;
-  box-shadow: 0 5px 15px rgba(40, 39, 39, 0.5);
-}
-
 
 #profile-img {
   max-width: 300px;
   height: auto;
-  border-radius: 50%;
+}
+.profession p {
+  text-align: left;
+  font-family: univers;
+  font-weight: 200;
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+.profession h6 {
+  text-align: left;
+  font-family: univers;
+}
+
+.title-profession {
+  text-align: left;
+  font-family: shallota;
+  font-size: 30px;
+}
+.dates {
+  align-self: flex-start;
+  text-align: right;
+ padding-top: 0.4rem;
+  align-items: right;
+  font-size: 14px;
+  justify-content: end;
+  padding-right: 0px;
+}
+.section-profession{
+  padding-top: 13%;
+  padding-left: 0%;
+  padding-right: 0%;
+}
+.profession .city {
+  font-size: 13px;
 }
 
 @media (max-width: 500px) {
@@ -306,15 +319,20 @@ padding: 0%;
   p, h4 {
     text-align: center;
   }
-  p {
+  p, .about-description {
     font-size: 13px;
   }
   h4 {
     font-size: 15px;
   }
-  
+.profession p {
+  font-size: 18px;}
+.title-profession {
+  font-size: 25px;}
 }
-
+.profession h6 {
+  font-size: 16;
+}
 @media (max-width: 700px) {
   .images-menu {
     display: none;
@@ -345,4 +363,6 @@ padding: 0%;
     text-align: left;
     padding-left: 0px;
   }
+
+
 }
