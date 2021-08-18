@@ -36,6 +36,8 @@ body {
   margin: 0%;
   background-size: cover;
   background-repeat: no-repeat;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 #bgvideo {
@@ -73,6 +75,7 @@ a {
 .container {
   padding-left: 0px;
   padding-right: 0px;
+  
 }
 .logo{
   font-family: shallota;
@@ -86,6 +89,7 @@ nav {
   height: auto;
   background: transparent;
   border-bottom: thin solid;
+
 }
 nav ul {
 margin: 0;
@@ -98,12 +102,16 @@ nav li {
   font-weight: 150;
   font-family: univers;
 }
+.about-link{
+  padding-right: 0;
+}
 .professional {
   line-height: 35px;
   font-size: 18px;
   font-weight: 200;
   font-family: univers;
   width: 300px;
+  text-align: center;
 }
 nav a {
   text-decoration: none;
@@ -115,45 +123,30 @@ nav a {
 nav a:hover {
   color: #EFE4FF;
 }
-nav .active {
-  color: #EFE4FF;
+footer {
+  border-top: thin solid;
+  width: 100%;
+  text-align: center;
+  bottom: 0px;
 }
-a.nav-logo.active {
-  font-family: shallota;
-  font-size: 55px;
-  color: rgb(4, 6, 8);
+  footer a {
   text-decoration: none;
-  max-height: 80px;
-}
-.nav-items {
-  list-style-type: none;
-  margin: 0;
-}
-.nav-links {
-  padding: 1.3rem 1rem;
-  font-size: 20px;
-  color: rgb(4, 6, 8);
-  text-decoration: none;
+  color: black;
   font-family: univers;
-  font-weight: 200;
-  justify-content: flex-end;
+font-weight: 200;
 }
-.navbar-nav {
-  justify-content: flex-end;
-  padding-bottom: 0%;
-  padding-top: 20px;
+footer li {
+  justify-content: space-between;
+  display: inline;
 }
-.nav-links a:hover {
-  color: #cccccc;
+.footer {
+  margin-top: auto;
+  flex-shrink: 0;
+  position: absolute;
+  bottom: 35px;
+  
 }
-.custom-toggler {
-  border-color: black;
-}
-/* Setting the stroke to green using rgb values (0, 128, 0) */
 
-.custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(0, 0, 0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
 .projects {
   display: inline-flex;
   flex-direction: row;
@@ -189,7 +182,6 @@ h1 {
   margin-left: 15px;
   margin-right: 15px;
 }
-
 .subtitle {
   font-size: var(--subtitle-font-size);
  font-family: var(--subtitle-fam-font);
@@ -200,8 +192,6 @@ h1 {
   bottom: -24px;
   z-index: -1;
 }
-  
-
 .project-title {
   padding-top: 50px;;
 }
@@ -344,8 +334,10 @@ padding: 0%;
     padding: 0;
   }
   .logo {
-    font-size: 50px;
-    line-height: 35px;
+    font-size: 60px;
+    line-height: 40px;
+    text-align: start;
+    padding-left: 12px;
   }
   nav li{
     font-size: 18px;
@@ -356,13 +348,13 @@ padding: 0%;
   transform: rotate(-90deg);
   }
   .about {
-    top: 250px;
-    right: 8px;
+    transform: translateY(10%);
+  transform: rotate(-90deg);
   }
 
   .work {
-    top: 390px;
-    right: 8px;
+  transform: translateY(50%);
+  transform: rotate(-90deg);
   }
   nav {
     border-bottom: none;
@@ -370,14 +362,20 @@ padding: 0%;
   .professional {
     font-size: 18px;
     position: absolute;
-  top: 38%;
+  top: 30%;
   transform: translateY(-50%);
   transform: rotate(-90deg);
-  right: 300px;
-    left: 0px;
+  right: 310px;
+    left: -20px;
     margin-bottom: 0px;
     height: 200px;
     width: 270px;
+  }
+  footer {
+    bottom:0px;
+  }
+  footer a {
+    font-size: 14px;
   }
   .titles {
     padding-top: 20px;;
@@ -413,7 +411,7 @@ padding: 0%;
   font-size: 16;
  }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   .images-menu {
     display: none;
   }
@@ -421,17 +419,7 @@ padding: 0%;
     height: 2px;
     line-height: 0.5;
   }
-  a.nav-logo.active {
-    padding-top: 10px;
-  }
-  .navbar-bar {
-    margin-bottom: 70px;
-    margin-top: 20px;
-  }
-  .container-fluid-content {
-    margin-bottom: 70px;
-    padding-top: 90px;
-  }
+
   #profile-img {
     max-width: 210px;
   }
