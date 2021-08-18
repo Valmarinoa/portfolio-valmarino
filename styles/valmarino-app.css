@@ -94,15 +94,16 @@ padding:0;
 nav li {
   display: inline;
   line-height: 35px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 150;
   font-family: univers;
 }
 .professional {
   line-height: 35px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 200;
   font-family: univers;
+  width: 300px;
 }
 nav a {
   text-decoration: none;
@@ -339,8 +340,44 @@ padding: 0%;
   width: 100vw;
   height: 100vh;
   }
+  .container{
+    padding: 0;
+  }
   .logo {
-    font-size: 30px;
+    font-size: 50px;
+    line-height: 35px;
+  }
+  nav li{
+    font-size: 18px;
+    line-height: 18px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transform: rotate(-90deg);
+  }
+  .about {
+    top: 250px;
+    right: 8px;
+  }
+
+  .work {
+    top: 390px;
+    right: 8px;
+  }
+  nav {
+    border-bottom: none;
+  }
+  .professional {
+    font-size: 18px;
+    position: absolute;
+  top: 38%;
+  transform: translateY(-50%);
+  transform: rotate(-90deg);
+  right: 300px;
+    left: 0px;
+    margin-bottom: 0px;
+    height: 200px;
+    width: 270px;
   }
   .titles {
     padding-top: 20px;;
@@ -367,14 +404,14 @@ padding: 0%;
   h4 {
     font-size: 15px;
   }
-.profession p {
+ .profession p {
   font-size: 18px;}
-.title-profession {
+ .title-profession {
   font-size: 25px;}
-}
-.profession h6 {
+ }
+ .profession h6 {
   font-size: 16;
-}
+ }
 
 @media (max-width: 700px) {
   .images-menu {
