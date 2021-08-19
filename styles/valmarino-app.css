@@ -56,6 +56,8 @@ a {
 }
 
 .container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
   text-align: center;
   flex-direction: row;
   box-sizing: border-box;
@@ -107,7 +109,7 @@ nav li {
 }
 .professional {
   line-height: 35px;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 200;
   font-family: univers;
   width: 300px;
@@ -127,26 +129,35 @@ footer {
   border-top: thin solid;
   width: 100%;
   text-align: center;
-  bottom: 0px;
+  bottom: 35px;
 }
   footer a {
   text-decoration: none;
   color: black;
   font-family: univers;
-font-weight: 200;
+  font-weight: 200;
+
 }
 footer li {
   justify-content: space-between;
   display: inline;
+ 
 }
 .footer {
   margin-top: auto;
   flex-shrink: 0;
   position: absolute;
   bottom: 35px;
+  position: fixed;
   
 }
-
+.contact-link {
+  font-size: 18px;
+  transition: all 100ms ease-in-out;
+}
+.contact-link:hover{
+  color: #EFE4FF;
+}
 .projects {
   display: inline-flex;
   flex-direction: row;
@@ -170,17 +181,19 @@ footer li {
   align-items: center;
   height: fit-content;
 }
+
 .col {
   width: min-content;
 }
-h1 {
+.project-titles{
   text-align: center;
   font-family: shallota;
-  font-size: 100px;
   height: 30px;
   line-height: 0.2;
+  font-size: 35px;
   margin-left: 15px;
   margin-right: 15px;
+  font-weight: 100;
 }
 .subtitle {
   font-size: var(--subtitle-font-size);
@@ -188,17 +201,20 @@ h1 {
   text-align: var(--subtitle-text-align);
   font-weight: var(--subtitle-font-weight);
   position: relative;
+font-family: univers;
+font-weight: 200;
+  padding-bottom: 20px;
   margin: 0;
   bottom: -24px;
   z-index: -1;
 }
-.project-title {
-  padding-top: 50px;;
-}
+
 .main-project-title {
   height: 28px;
   text-align: center;
   padding-top: 0;
+  font-family: shallota;
+  font-size: 35px;
 }
 
 .project-subtitle{
@@ -223,6 +239,28 @@ p {
   font-size: 14px;
   font-family: univers;
 }
+.home-titles{
+width: fit-content;
+display: flex;
+position: relative;
+text-align: right;
+flex-direction: row;
+  box-sizing: border-box;
+  left: 70%;
+  top: 300px;
+}
+.phrase-1, .phrase-2 {
+font-size: 22px;
+line-height: 10px;
+font-weight: 200;
+font-family: univers;
+}
+.phrase-3 {
+  font-family: shallota;
+  font-size: 32px;
+  line-height: 10px;
+}
+
 #highlight {
   color: blue;
 }
@@ -275,7 +313,7 @@ padding: 0%;
 .images-menu {
   position: absolute;
   text-align: center;
-  display: none;
+  display: block;
   top: 50%;
   left: 50%;
   bottom: -200px;
@@ -343,33 +381,31 @@ padding: 0%;
     font-size: 18px;
     line-height: 18px;
   position: absolute;
-  top: 50%;
   transform: translateY(-50%);
   transform: rotate(-90deg);
   }
   .about {
-    transform: translateY(10%);
-  transform: rotate(-90deg);
-  }
+  bottom: 62%;
+  left: 90%}
 
   .work {
-  transform: translateY(50%);
-  transform: rotate(-90deg);
+  top: 53%;
+  left: 90%}
   }
   nav {
     border-bottom: none;
   }
-  .professional {
-    font-size: 18px;
-    position: absolute;
-  top: 30%;
+.professional {    
+  font-size: 18px;
+  position: absolute;
   transform: translateY(-50%);
   transform: rotate(-90deg);
-  right: 310px;
-    left: -20px;
-    margin-bottom: 0px;
-    height: 200px;
-    width: 270px;
+  top: 40%;
+  left: -15%;
+  margin-bottom: 0px;
+  height: 100px;
+  width: fit-content;
+  align-content: flex-start;
   }
   footer {
     bottom:0px;
@@ -406,20 +442,30 @@ padding: 0%;
   font-size: 18px;}
  .title-profession {
   font-size: 25px;}
- }
+ 
  .profession h6 {
   font-size: 16;
  }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .images-menu {
     display: none;
+  }
+  nav {
+    border-bottom: thin solid;
+  }
+  nav li{
+    font-size: 22px;
+    line-height: 22px;
   }
   h1 {
     height: 2px;
     line-height: 0.5;
-  }
+}
 
+.professional {    
+  font-size: 20px;
+}
   #profile-img {
     max-width: 210px;
   }

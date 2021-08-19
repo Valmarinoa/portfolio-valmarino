@@ -28,25 +28,22 @@
       crossorigin="anonymous"
     ></script>
     <script type="text/javascript" src="./script.js"></script>
-    <style>
-      .navbar-pad {
-         padding-top: 15px;
-        padding-bottom: 0px;
-        max-height: 80px;
-      }
-    </style>
   </head>
   <body>
     <video autoplay muted loop id="bgvideo">
       <source src="assets/aguaclara2.mp4" type="video/mp4" />
     </video>
-    <div class="container">
+    <div class="container-fluid ps-0 pe-0">
       <nav class="d-flex justify-content-between pb-0">
-        <a href="./home.html"><h2 class="logo">Valentina Mariño</h2></a>
-        <p class="professional">Product & Experience Designer</p>
+        <a href="./home.html" class="p-0"
+          ><h2 class="logo ps-5">Valentina Mariño</h2></a
+        >
+
         <ul>
-          <a href="./about.html"> <li>About</li></a>
-          <a href="./index.html"> <li>Work</li></a>
+          <a href="./about.html" class="about-link">
+            <li class="about">About</li></a
+          >
+          <a href="./index.html"> <li class="work">Work</li></a>
         </ul>
       </nav>
     </div>
@@ -60,146 +57,196 @@
         pt-0
       "
     >
-      <div class="row d-flex justify-content-center">
+      <div class="row d-flex justify-content-center" style="height: 100px">
         <div class="col-sm-auto">
-            <img
-              src="/assets/silence-of-blue/blue.gif"
-              class="img-fluid images-menu"           id="silence-img"
-            />
-            <p class="subtitle">
-            Interaction | Product
-          </p>
-            <a href="silence.html" class="project">
-              <h1 onmouseover="showSilence()" onmouseout="hideSilence()">
-                Silence of Blue
-              </h1>
-            </a>
-          </div>
-        
-          <div class="col-sm-auto">
-            <img
-              src="/assets/value.gif"
-              class="img-fluid images-menu"           
-              id="value-img">
-            <p class="subtitle">
-            UX Research
-          </p>
-            <a href="#" class="project">
-              <h1 onmouseover="showValue()" onmouseout="hideValue()">
-                Value Tuning
-              </h1>
-            </a>
-          </div>
-          <div class="col-sm-auto">
-            <img
-              src="/assets/aurae.png"
-              class="img-fluid images-menu"           
-              id="aurae-img"
-            />
-            <p class="subtitle">
-            UX|UI
-          </p>
-            <a href="#" class="project">
-              <h1 onmouseover="showAurae()" onmouseout="hideAurae()">Aurae</h1>
-            </a>
-          </div>
+          <img
+            src="/assets/silence-of-blue/blue.gif"
+            class="img-fluid images-menu"
+            id="silence-img"
+          />
+          <p class="subtitle">Interaction | Product</p>
+          <a href="silence.html" class="project">
+            <p
+              class="project-titles"
+              onmouseover="showSilence()"
+              onmouseout="hideSilence()"
+            >
+              Silence of Blue
+            </p>
+          </a>
         </div>
 
-        <div class="row d-flex justify-content-center">
-          <div class="col-sm-auto">
-            <img
-              src="/assets/water.png"
-              class="img-fluid images-menu"
-              id="water-img"
-            />
-            <p class="subtitle">
-            Interaction
-          </p>
-            <a href="#" class="project">
-              <h1 onmouseover="showWater()" onmouseout="hideWater()">
-                Anthropology of Water
-              </h1>
-            </a>
-          </div>
-          <div class="col-sm-auto">
-            <img
-              src="/assets/thoughts.png"
-              class="img-fluid images-menu"           
-              id="thoughts-img"
-            />
-            <p class="subtitle">
-            Research
-          </p>
-            <a href="#" class="project">
-              <h1 onmouseover="showThoughts()" onmouseout="hideThoughts()">
-                Thoughts
-              </h1>
-            </a>
-          </div>
-          <div class="col-sm-auto">
-            <img
-              src="/assets/star.png"
-              class="img-fluid images-menu"           
-              id="star-img"
-            />
-            <p class="subtitle">
-            Interaction | Product
-          </p>
-            <a href="#" class="project">
-              <h1 onmouseover="showStar()" onmouseout="hideStar()">
-                Starlight Barhandle
-              </h1>
-            </a>
-          </div>
-        </div>
+        <div class="col-sm-auto">
+          <img
+            src="/assets/value.gif"
+            class="img-fluid images-menu"
+            id="value-img"
+          />
 
-        <div class="row d-flex justify-content-center">
-          <div class="col-sm-auto">
-            <img src="/assets/box.gif" class="img-fluid images-menu" id="box-img" />
-            <p class="subtitle">
-            Interaction | Product
-          </p>
-            <a href="#" class="project">
-              <h1 onmouseover="showBox()" onmouseout="hideBox()">
-                Seduce the Box
-              </h1>
-            </a>
-          </div>
-          <div class="col-sm-auto">
-            <img
-              src="/assets/human-systems.gif"
-              class="img-fluid images-menu"           
-              id="human-systems-img"
-            />
-            <p class="subtitle">
-            Ethnographic Research
-          </p>
-            <a href="#" class="project">
-              <h1
-                onmouseover="showHumanSystems()"
-                onmouseout="hideHumanSystems()"
-              >
-                Human Systems
-              </h1>
-            </a>
-          </div>
-          <div class="col-sm-auto">
+          <p class="subtitle">UX Research</p>
+          <a href="#" class="project">
+            <p
+              class="project-titles"
+              onmouseover="showValue()"
+              onmouseout="hideValue()"
+            >
+              Value Tuning
+            </p>
+          </a>
+        </div>
+        <div class="col-sm-auto">
+          <img
+            src="/assets/aurae.png"
+            class="img-fluid images-menu"
+            id="aurae-img"
+          />
+          <p class="subtitle">UX|UI</p>
+          <a href="#" class="project">
+            <p
+              class="project-titles"
+              onmouseover="showAurae()"
+              onmouseout="hideAurae()"
+            >
+              Aurae
+            </p>
+          </a>
+        </div>
+      </div>
+
+      <div class="row d-flex justify-content-center" style="height: 100px">
+        <div class="col-sm-auto">
+          <img
+            src="/assets/water.png"
+            class="img-fluid images-menu"
+            id="water-img"
+          />
+          <p class="subtitle">Interaction</p>
+          <a href="#" class="project">
+            <p
+              class="project-titles"
+              onmouseover="showWater()"
+              onmouseout="hideWater()"
+            >
+              Anthropology of Water
+            </p>
+          </a>
+        </div>
+        <div class="col-sm-auto">
+          <img
+            src="/assets/thoughts.png"
+            class="img-fluid images-menu"
+            id="thoughts-img"
+          />
+          <p class="subtitle">Research</p>
+          <a href="#" class="project">
+            <p
+              class="project-titles"
+              onmouseover="showThoughts()"
+              onmouseout="hideThoughts()"
+            >
+              Thoughts
+            </p>
+          </a>
+        </div>
+        <div class="col-sm-auto">
+          <img
+            src="/assets/star.png"
+            class="img-fluid images-menu"
+            id="star-img"
+          />
+          <p class="subtitle">Interaction | Product</p>
+          <a href="#" class="project">
+            <p
+              class="project-titles"
+              onmouseover="showStar()"
+              onmouseout="hideStar()"
+            >
+              Starlight Barhandle
+            </p>
+          </a>
+        </div>
+      </div>
+
+      <div class="row d-flex justify-content-center" style="height: 100px">
+        <div class="col-sm-auto">
+          <img
+            src="/assets/box.gif"
+            class="img-fluid images-menu"
+            id="box-img"
+          />
+          <p class="subtitle">Interaction | Product</p>
+          <a href="#" class="project">
+            <p
+              class="project-titles"
+              onmouseover="showBox()"
+              onmouseout="hideBox()"
+            >
+              Seduce the Box
+            </p>
+          </a>
+        </div>
+        <div class="col-sm-auto">
+          <img
+            src="/assets/human-systems.gif"
+            class="img-fluid images-menu"
+            id="human-systems-img"
+          />
+          <p class="subtitle">Ethnographic Research</p>
+          <a href="#" class="project">
+            <p
+              class="project-titles"
+              onmouseover="showHumanSystems()"
+              onmouseout="hideHumanSystems()"
+            >
+              Human Systems
+            </p>
+          </a>
+        </div>
+        <div class="col-sm-auto">
           <img
             src="/assets/frozen.png"
-            class="img-fluid  images-menu"
+            class="img-fluid images-menu"
             id="frozen-img"
           />
-          <p class="subtitle">
-            Material Research
-          </p>
+          <p class="subtitle">Material Research</p>
           <a href="#" class="project">
-            <h1 onmouseover="showFrozen()" onmouseout="hideFrozen()">
+            <p
+              class="project-titles"
+              onmouseover="showFrozen()"
+              onmouseout="hideFrozen()"
+            >
               Frozen Woods
-            </h1>
+            </p>
           </a>
-          </div>
         </div>
       </div>
     </div>
+    <footer class="footer">
+      <div class="text-center">
+        <ul class="pt-3 pb-0 ps-0 mb-0">
+          <li>
+            <a
+              href="mailto:valenmarinocol@gmail.com"
+              class="pe-4 ps-4 contact-link"
+              >e-mail</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/Valmarinoa"
+              class="pe-4 ps-4 contact-link"
+              >GitHub</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/valentina-mari%C3%B1o/"
+              class="pe-4 ps-4 contact-link"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>

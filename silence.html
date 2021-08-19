@@ -28,41 +28,23 @@
       crossorigin="anonymous"
     ></script>
     <script type="text/javascript" src="./script.js"></script>
-    <style>
-      .navbar-pad {
-        padding-top: 15px;
-        padding-bottom: 0px;
-        max-height: 80px;
-        
-      }
-    </style>
+  
   </head>
   <body>
-    <nav class="navbar navbar-expand-md navbar-pad bg-white sticky-top">
-      <div class="container-fluid">
-        <a class="nav-logo active" href="index.html">Valentina Mariño</a>
-        <button
-          class="navbar-toggler custom-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+    <div class="container-fluid pe-0 ps-0">
+      <nav class="d-flex justify-content-between pb-0 position-fixed">
+        <a href="./home.html" class="p-0"
+          ><h2 class="logo ps-5">Valentina Mariño</h2></a
         >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-flex-end"
-          id="navbarNavAltMarkup"
-        >
-          <div class="navbar-nav">
-            <a class="nav-links" href="#">Works</a>
-            <a class="nav-links" href="/about.html">About</a>
-          </div>
-        </div>
-      </div>
-    </nav>
+        
+        <ul>
+          <a href="./about.html" class="about-link">
+            <li class="about">About</li></a
+          >
+          <a href="./index.html"> <li class="work">Work</li></a>
+        </ul>
+      </nav>
+    </div>
 
     <div
       class="
@@ -70,10 +52,10 @@
         justify-content-center
       "
     >
-      <div class="row d-flex justify-content-center pt-title">
+      <div class="row d-flex justify-content-center pt-title mb-5">
         <div class="col-sm-auto">
           <div class="project-title">
-            <h1 class="main-project-title mb-0">Silence of Blue</h1>
+            <h1 class="main-project-title mb-3">Silence of Blue</h1>
             <p class="project-subtitle">Melkweg Awards Nominee 2019</p>
           </div>
         </div>
@@ -141,7 +123,7 @@
                             <img src="./assets/silence-of-blue/technicals-silence3.png" class="process-silence technicals img-fluid">
                 </div>
             </div>
-            <div class="row d-flex justify-content-center mx-auto pt-5">
+            <div class="row d-flex justify-content-center mx-auto  pt-5">
                 <div class="col-sm-3">
                             <img src="./assets/silence-of-blue/profile-technicals-silence1.png" class="process-silence technicals img-fluid pb-4">
                             <h6>270°</h6>
@@ -156,7 +138,7 @@
                 </div>
             </div>
             
-                <div class="row d-flex justify-content-center mx-auto pt-5 ">
+                <div class="row d-flex justify-content-center mx-auto mt-5 pt-5 ">
                 <div class="col-md-5 silence-image-container p-0">
                             <img src="./assets/silence-of-blue/full-front.png" class="slider-img img-fluid">
                             <img src="./assets/silence-of-blue/perfil1.png" class="slider-img img-fluid">
@@ -174,5 +156,32 @@
                 </div>
             </div>
     </div>
+    <footer class="footer">
+      <div class="text-center">
+        <ul class="pt-3 pb-0 ps-0 mb-0">
+          <li>
+            <a
+              href="mailto:valenmarinocol@gmail.com"
+              class="pe-4 ps-4 contact-link"
+              >e-mail</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/Valmarinoa"
+              class="pe-4 ps-4 contact-link"
+              >GitHub</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/valentina-mari%C3%B1o/"
+              class="pe-4 ps-4 contact-link"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
