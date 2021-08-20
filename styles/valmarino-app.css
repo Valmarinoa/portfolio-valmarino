@@ -123,7 +123,7 @@ nav a {
   transition: all 100ms ease-in-out;
 }
 nav a:hover {
-  color: #EFE4FF;
+  color: rgb(39, 243, 66);
 }
 footer {
   border-top: thin solid;
@@ -156,7 +156,7 @@ footer li {
   transition: all 100ms ease-in-out;
 }
 .contact-link:hover{
-  color: #EFE4FF;
+  color: rgb(39, 243, 66);
 }
 .projects {
   display: inline-flex;
@@ -172,7 +172,8 @@ footer li {
   margin-bottom: 10px;
 }
 .project:hover {
-  mix-blend-mode: multiply;
+  color: rgb(39, 243, 66);
+  background-blend-mode: overlay;
 }
 
 .row {
@@ -257,7 +258,9 @@ font-size: 22px;
 line-height: 10px;
 font-weight: 200;
 font-family: univers;
+text-align: center;
 }
+
 .phrase-3 {
   font-family: shallota;
   font-size: 32px;
@@ -327,7 +330,7 @@ padding: 0%;
   max-height: 350px;
   width: auto;
   box-shadow: 0 5px 15px rgba(40, 39, 39, 0.5);
-  z-index: -2;
+  z-index: -1;
 }
 
 #profile-img {
@@ -425,11 +428,18 @@ padding: 0%;
   .pt-title {
     margin: 0px;
   }
-  .project-title{
-    padding-top: 40%;
-    width: 100%;
+  .project-menu-components {
+    margin-top: 1%;
   }
- 
+  .project-titles{
+    width: 100%;
+    font-size: 33px;
+    margin-left: 0;
+    text-align: left;
+  }
+ .images-menu {
+   display: none;
+ }
   .contact-link {
     font-size: 13px;
   }
@@ -501,9 +511,7 @@ padding: 0%;
 .title-profession {
   font-size: 53px;
 }
-.role {
-  font-size: 22px;
-}
+
 .content {
     text-align: left;
     padding-left: 0px;
@@ -511,7 +519,4 @@ padding: 0%;
 .contact-link{
   font-size: 18px ;
 }
-
-
-
 }
