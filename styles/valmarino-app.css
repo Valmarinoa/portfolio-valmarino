@@ -416,6 +416,10 @@ padding: 0%;
   width: fit-content;
   align-content: flex-start;
   }
+  .professional-home {
+    font-family: univers;
+    font-size: 22px;
+  }
   footer {
     bottom:0px;
   }
@@ -428,6 +432,9 @@ padding: 0%;
   .pt-title {
     margin: 0px;
   }
+  .pt-mobile {
+    padding-top: 20%;
+  }
   .project-menu-components {
     margin-top: 1%;
   }
@@ -437,8 +444,16 @@ padding: 0%;
     margin-left: 0;
     text-align: left;
   }
+  .row-height {
+    height: 80px;
+  }
  .images-menu {
    display: none;
+ }
+ .subtitle {
+   padding-bottom: 10px;
+   text-align: start;
+   font-family: univers;
  }
   .contact-link {
     font-size: 13px;
