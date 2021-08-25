@@ -442,7 +442,15 @@ padding: 0%;
     width: 100%;
     font-size: 30px;
     margin-left: 0;
-    text-align: left;
+    text-align: center;
+     opacity: 0.4
+  }
+
+  .title-silence {
+    opacity: 1;
+  }
+  .subtitle-silence {
+    opacity: 1;
   }
   .row-height {
     height: 80px;
@@ -453,8 +461,10 @@ padding: 0%;
  
  .subtitle {
    padding-bottom: 10px;
-   text-align: start;
+   text-align: center;
    font-family: univers;
+   opacity: 0.4
+  
  }
   .contact-link {
     font-size: 13px;
